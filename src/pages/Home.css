@@ -1,0 +1,138 @@
+.home-container {
+  background-color: #f3e7d5;
+  font-family: "Comic Sans MS", "Manrope", sans-serif;
+  color: #111;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  font-weight: bold;
+  border-bottom: 3px solid #000000; /* This creates the dividing line */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: #111;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-banner, .left-mid {
+  flex: 1;
+  text-align: center;
+}
+
+.right-banner, .right-mid {
+  flex: 1;
+  padding: 1rem;
+}
+
+.text-box {
+  background: #fff;
+  border: 2px solid #111;
+  border-radius: 8px;
+  padding: 1.5rem;
+  font-size: 1rem;
+  margin: 1rem;
+  box-shadow: 4px 4px 0px #000;
+}
+
+.clippy-image {
+  max-width: 500px;
+  height: auto;
+}
+
+.clippy-tokenomics {
+  position: relative;
+  top: 20px;     /* move down */
+  left: -20px;   /* move left */
+  width: 700px;
+  height: 700px;
+}
+
+.social-icons {
+  position: absolute;
+  top: 1.5rem;    /* Increase this to move down */
+  left: 2rem;   /* Increase this to move right */
+  display: flex;
+  gap: 1rem;
+  z-index: 999;
+}
+
+.social-icons a {
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+
+.title {
+  font-size: 3rem;
+  margin-top: 0.5rem;
+  color: #000;
+}
+
+.footer-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.clippy-image-below {
+  margin-top: 0;
+  padding-top: 4px; /* lidt luft uden for meget afstand */
+  width: 100%;
+  max-width: 100px;
+}
+
+.clippy-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.clippy-image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 500px;
+}
+
+.clippy-image-overlap {
+  position: absolute;
+  top: 400px; /* justér hvor højt overlappet skal starte */
+  left: 15px;
+  z-index: 2;
+  width: 100%;
+  max-width: 700px;
+  opacity: 0.95; /* valgfrit: lidt gennemsigtighed */
+}
