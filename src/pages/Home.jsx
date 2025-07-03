@@ -15,10 +15,10 @@ const Home = () => {
 </div>
       <nav className="navbar">
         <ul>
-          <li><Link to="/">USE ME</Link></li>
+          <Link to="/">USE ME</Link>
           <Link to="/tokenomics">TOKENOMICS</Link>
-          <li><a href="/roadmap">ROADMAP</a></li>
-          <li><a href="#community">COMMUNITY</a></li>
+          <a href="/roadmap">ROADMAP</a>
+          <a href="#community">COMMUNITY</a>
         </ul>
       </nav>
 
