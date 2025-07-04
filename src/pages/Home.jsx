@@ -72,11 +72,6 @@ const Home = () => {
               alt="Clippy saying use me"
               className="clippy-image"
             />
-            <img
-              src="/useme.png"
-              alt="Clippy walking the road"
-              className="clippy-image-overlap"
-            />
           </div>
         </div>
         <div className="right-banner fade-in-section">
