@@ -187,6 +187,19 @@
   display: inline-block;
 }
 
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .left-banner {
+    order: -1; /* show image ABOVE text */
+  }
+
+  .right-banner {
+    order: 0;
+  }
+}
 
 .clippy-image {
   position: relative;
