@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/home";
-import Tokenomics from "./pages/tokenomics";
-import Roadmap from "./pages/roadmap";
+import Home from "./pages/Home";
+import Tokenomics from "./pages/Tokenomics";
+import Roadmap from "./pages/Roadmap";
 
 function App() {
   return (
