@@ -1,3 +1,5 @@
+/* === DESKTOP: ALT SOM DU HAR DET NU (Uændret) === */
+
 .home-container {
   background-color: #f3e7d5;
   font-family: "Comic Sans MS", "Manrope", sans-serif;
@@ -13,7 +15,7 @@
   justify-content: flex-end;
   gap: 2rem;
   font-weight: bold;
-  border-bottom: 3px solid #000000; /* This creates the dividing line */
+  border-bottom: 3px solid #000000;
 }
 
 .navbar ul {
@@ -71,16 +73,16 @@
 
 .clippy-tokenomics {
   position: relative;
-  top: 20px;     /* move down */
-  left: -20px;   /* move left */
+  top: 20px;
+  left: -20px;
   width: 700px;
   height: 700px;
 }
 
 .social-icons {
   position: absolute;
-  top: 1.5rem;    /* Increase this to move down */
-  left: 2rem;   /* Increase this to move right */
+  top: 1.8rem;
+  left: 2rem;
   display: flex;
   gap: 1rem;
   z-index: 999;
@@ -96,7 +98,6 @@
   transform: scale(1.2);
 }
 
-
 .title {
   font-size: 3rem;
   margin-top: 0.5rem;
@@ -110,7 +111,7 @@
 
 .clippy-image-below {
   margin-top: 0;
-  padding-top: 4px; /* lidt luft uden for meget afstand */
+  padding-top: 4px;
   width: 100%;
   max-width: 100px;
 }
@@ -129,10 +130,118 @@
 
 .clippy-image-overlap {
   position: absolute;
-  top: 400px; /* justér hvor højt overlappet skal starte */
+  top: 400px;
   left: 15px;
   z-index: 2;
   width: 100%;
   max-width: 700px;
-  opacity: 0.95; /* valgfrit: lidt gennemsigtighed */
+  opacity: 0.95;
+}
+
+
+/* === 📱 MOBIL: DISKRET LAYOUT-ÆNDRING === */
+/* === 📱 MOBIL: MODAL BURGER MENU === */
+@media (max-width: 768px) {
+.burger {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem; /* <- dette placerer den i højre hjørne */
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.social-icons {
+  position: absolute;
+  top: 1.3rem;
+  left: 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 999;
+}
+
+.social-icons a {
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.clippy-image-overlap {
+  position: absolute;
+  top: 220px;
+  left: 15px;
+  z-index: 2;
+  width: 100%;
+  max-width: 700px;
+  opacity: 0.95;
+}
+
+.clippy-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+
+.clippy-image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 900px;
+}
+
+  .burger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #111;
+    transition: all 0.3s ease;
+  }
+
+  .burger .bar.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger .bar.open:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    transform: translateY(0);
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar {
+    padding-top: 2rem;
+    padding-bottom: 0.6rem;
+    height: 25px;
+  }
 }
