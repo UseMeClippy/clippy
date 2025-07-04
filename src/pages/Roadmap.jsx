@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css"; // Create this CSS file separately for styling
 import { FaXTwitter } from "react-icons/fa6";
-import { FaTelegramPlane } from "react-icons/fa"; // ✅ this is the correct one
 import { Link } from "react-router-dom";
 
 const Roadmap = () => {
@@ -17,7 +16,7 @@ const Roadmap = () => {
         <ul>
           <Link to="/">USE ME</Link>
           <Link to="/tokenomics">TOKENOMICS</Link>
-          <a href="/roadmap">ROADMAP</a>
+          <Link to="/roadmap">ROADMAP</Link>
           <a href="#community">COMMUNITY</a>
         </ul>
       </nav>

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css"; // Du kan evt. skifte navnet til Tokenomics.css for klarhed
 import { FaXTwitter } from "react-icons/fa6";
-import { FaTelegramPlane } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Tokenomics = () => {
@@ -9,19 +8,16 @@ const Tokenomics = () => {
     <div className="home-container">
       {/* Navbar */}
       <div className="social-icons">
-        <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/usemecoin" target="_blank" rel="noopener noreferrer">
           <FaXTwitter size={40} />
-        </a>
-        <a href="https://t.me/yourchannel" target="_blank" rel="noopener noreferrer">
-          <FaTelegramPlane size={40} />
         </a>
       </div>
       
       <nav className="navbar">
         <ul>
-          <li><Link to="/">USE ME</Link></li>
+          <Link to="/">USE ME</Link>
           <Link to="/tokenomics">TOKENOMICS</Link>
-          <li><a href="/roadmap">ROADMAP</a></li>
+          <Link to="/roadmap">ROADMAP</Link>
           <li><a href="#community">COMMUNITY</a></li>
         </ul>
       </nav>
