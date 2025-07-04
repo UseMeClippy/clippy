@@ -1,11 +1,13 @@
 /* === DESKTOP: ALT SOM DU HAR DET NU (Uændret) === */
 
 .home-container {
+  position: relative;
   background-color: #f3e7d5;
   font-family: "Comic Sans MS", "Manrope", sans-serif;
   color: #111;
   padding: 0;
   margin: 0;
+  overflow: hidden; /* ← vigtigt for at undgå ekstra scroll */
 }
 
 .navbar {
@@ -149,6 +151,42 @@
   opacity: 5;
   transform: none;
 }
+
+.coin-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* vil følge home-container */
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.floating-coin {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  opacity: 0.25;
+  animation-name: floatUp;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+    opacity: 0.2;
+  }
+}
+
 
 
 

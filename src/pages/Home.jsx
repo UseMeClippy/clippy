@@ -36,6 +36,23 @@ const Home = () => {
 
   return (
     <div className="home-container">
+      <div className="coin-background">
+  {Array.from({ length: 15 }).map((_, index) => (
+    <img
+      key={index}
+      src="/coin.png"
+      alt="coin"
+      className="floating-coin"
+style={{
+  top: `${10 + Math.random() * 100}%`, // 70% to 120%
+  left: `${Math.random() * 100}%`,
+  animationDuration: `${5 + Math.random() * 10}s`,
+  animationDelay: `${Math.random() * 5}s`,
+}}
+    />
+  ))}
+</div>
+
       {/* Social icons */}
       <div className="social-icons">
         <a
