@@ -32,11 +32,10 @@ const Tokenomics = () => {
             <h2>$USEME Tokenomics</h2>
             <p><strong>Total Supply:</strong> 1,000,000,000</p>
             <ul>
-              <li>🔁 50% Liquidity Pool</li>
-              <li>📈 25% Marketing & Growth</li>
-              <li>👷‍♂️ 15% Dev & Ops</li>
-              <li>🎁 5% Community Rewards</li>
-              <li>🔥 5% Burned at launch</li>
+              <li>🔁 ONGOING</li>
+              <li>👷‍♂️ 10% Dev & Ops</li>
+              <li>🎁 70% COMMUNITY</li>
+              <li>🔥 20% Burned at launch</li>
             </ul>
             <p>
               Clippy ensures every $USEME has a job. No idle tokens, no mercy.  
